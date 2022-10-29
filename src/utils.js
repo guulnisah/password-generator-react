@@ -3,9 +3,9 @@ const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const numbers = '0123456789'
 const symbols = '~`!@#$%^&*()_-+={[}],|:;<>.?/'
 
-function getRandomElement(arr) {
-    const randomIndex = Math.floor(Math.random() * arr.length)
-    return arr[randomIndex]
+function getRandomElement(str) {
+    const randomIndex = Math.floor(Math.random() * str.length)
+    return str[randomIndex]
 }
 
 export default function getPassword(hasUppercase, hasLowercase, hasNumbers, hasSymbols, length) {
